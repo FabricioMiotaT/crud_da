@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" 
+                        h-[400px]
+                        w-full 
+                        flex 
+                        items-center
+                        justify-center
+                        bg-gradient-to-r from-[#2a2a72] to-[#009ffd] ">
+        <div class="bg-white 
+                        p-12
+                        rounded-2xl
+                        w-[500px]
+                        shadow-md
+                        shadow-slate-900
+                         ">
+          <h1 class="font-bold
+                         text-4xl
+                         flex
+                         justify-center
+                         mb-12
+                          ">
+            Ingrese Datos</h1>
+
+            <form id="task-form" class=" flex flex-col">
+                <label for="title">Titulo</label>
+                <input class="border-2 border-gray-500 rounded-lg " type="text" placeholder="Task title" id="task-title">
+    
+                <label for="description">Description</label>
+                <textarea class="border-2 border-gray-500 rounded-lg " type="text" placeholder="Task description" row="3" id="task-description"></textarea>   
+                
+                <button class="bg-gray-200 rounded-lg m-2 " id="task-save" >Enviar</button>
+            </form>
+        </div>
+      </div>
+    
+        
+    <div id="tasks-container"></div>
+
+    
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>
+
